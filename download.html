@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Download ShadowHex.exe</title>
+</head>
+<body>
+    <h1>Downloading ShadowHex Installer...</h1>
+    <p>If the download doesn't start automatically, <a href="ShadowHex.exe" download>click here</a> to download the file.</p>
+
+    <script>
+        // Function to trigger automatic download
+        window.onload = function() {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = 'ShadowHex.exe';
+            link.download = 'ShadowHex.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</body>
+</html>
